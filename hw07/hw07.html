@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" tyle="image/png" href="./img/steam_logo.png">
+    <title>Steam에 오신 것을 환영합니다</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <style>
+        #menu {
+            height: 30px;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        #menu li {
+            background-color: #356D93;
+            list-style: none;
+            float: left;
+            color: white;
+            padding: 9px;
+            border-right: solid 1px gray;
+        }
+
+        #menu li:hover {
+            background-color: #D6E0E8;
+            padding: 9px 9px;
+        }
+
+        #menu li a:hover {
+            color: black;
+        }
+
+        #best {
+            margin: 50px 40px;
+            color: white;
+        }
+
+        .item {
+            clear: both;
+            display: grid;
+            grid-template-columns: 600px 350px;
+            height: 340px;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .detail {
+            background-color: black;
+            padding: 0 20px 0 20px;
+            height: 341.85px;
+        }
+
+        .title {
+            margin: 15px 0;
+            color: white;
+            font-size: 23px;
+        }
+
+        .price {
+            color: #87DBF5;
+            font-size: 5px;
+        }
+
+        .images img:hover {
+            opacity: 0.7;
+        }
+
+        .sale {
+            color: white;
+            font-size: 20px;
+            margin: 5px 0 0 0;
+        }
+
+        .hot {
+            text-align: center;
+            border-radius: 2px;
+            background-color: #394148;
+            width: 80px;
+            font-size: 5px;
+            color: white;
+            padding: 1px;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: fit-content;
+        }
+
+        #col {
+            column-count: 3;
+            column-gap: 10px;
+            width: 1130px;
+            margin: 0 auto;
+        }
+
+        #col img {
+            width: 280px;
+        }
+
+        figure {
+            width: fit-content;
+            background-color: #1D6F95;
+            text-align: center;
+            vertical-align: center;
+            display: inline-block;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        figure:hover {
+            opacity: 0.8;
+        }
+
+        figcaption {
+            padding: 2px;
+            height: 65px;
+        }
+
+        .game_info {
+            display: inline-block;
+        }
+
+        .game_info.title {
+            padding: 5px;
+            margin: 0;
+        }
+
+        .game_info.discount {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .game_info.price {
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: black;
+            color: rgb(190, 190, 190);
+            text-align: center;
+        }
+
+        footer p a {
+            text-decoration: underline;
+            color: #5C7E10;
+        }
+
+        footer p a:visited {
+            color: #5C7E10;
+        }
+
+        footer p a:hover {
+            color: #1D6F95;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="hw07.html"><img src="./img/header_logo.png" alt="스팀 로고" id="steam_logo" width="200px"></a>
+        </div>
+        <div id="nav">
+            <a href="./hw07.html">상점</a>&nbsp;&nbsp;
+            <a href="./community.html">커뮤니티</a>&nbsp;&nbsp;
+            <a href="./information.html">정보</a>&nbsp;&nbsp;
+            <a href="./help.html">지원</a>
+        </div>
+        <div id="setting">
+            <ul>
+                <li><a href=""><img src="./img/install.PNG" alt="스팀 설치" width="100px;"
+                            style="vertical-align: middle;"></a>&nbsp;&nbsp;</li>
+                <li><a href="./login.html">로그인&nbsp;&nbsp;|</a></li>
+                <select name="language">
+                    <option value="1">한국어</option>
+                    <option value="2">영어</option>
+                    <option value="3">일본어</option>
+                    <option value="4">중국어</option>
+                </select>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <ul id="menu">
+                <li class="store_nav"><a href="">내 상점</a></li>
+                <li class="store_nav"><a href="">둘러보기</a></li>
+                <li class="store_nav"><a href="">포인트 상점</a></li>
+                <li class="store_nav"><a href="">뉴스</a></li>
+                <li class="store_nav" style="border-right: solid 1px #356D93;"><a href="">steam 실험실</a></li>
+            </ul>
+            <div id="best">
+                <p>특집 및 추천 제품</p>
+                <div class="item">
+                    <div class="img">
+                        <img src="./img/monsterhunter.PNG" alt="몬스터헌터" width="600px">
+                    </div>
+                    <div class="detail">
+                        <p class="title">Monster Hunter: World</p>
+                        <div class="images">
+                            <img src="./img/m1.png" alt="몬스터헌터" width="150px">
+                            <img src="./img/m2.png" alt="몬스터헌터" width="150px">
+                            <img src="./img/m3.png" alt="몬스터헌터" width="150px">
+                            <img src="./img/m4.png" alt="몬스터헌터" width="150px">
+                        </div>
+                        <p class="sale">판매 중</p>
+                        <p class="hot">최고 인기 제품</p><br>
+                        <p class="price">\ 34,900</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="col">
+            <figure>
+                <img src="./img/g1.PNG" alt="Frostpunk">
+                <figcaption>
+                    <div class="title game_info">Frostpunk</div>
+                    <div class="discount game_info" style="background-color:#5C7E10; color:#A4D007;">-66%</div>
+                    <div class="price game_info" style="background-color:#162F40;">
+                        <span style="color:#487180;"><del>\31,000</del></span><br>
+                        <span style="color:#ACDBF5;">\10,540</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/g2.PNG" alt="Battlefield4">
+                <figcaption>
+                    <div class="title game_info">Battlefield4</div>
+                    <div class="discount game_info" style="background-color:#5C7E10; color:#A4D007;">-75%</div>
+                    <div class="price game_info" style="background-color:#162F40;">
+                        <span style="color:#487180;"><del>\44,000</del></span><br>
+                        <span style="color:#ACDBF5;">\11,000</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/g3.PNG" alt="Spiritfarer">
+                <figcaption>
+                    <div class="title game_info">Spiritfarer</div>
+                    <div class="discount game_info" style="background-color:#5C7E10; color:#A4D007;">-34%</div>
+                    <div class="price game_info" style="background-color:#162F40;">
+                        <span style="color:#487180;"><del>\31,000</del></span><br>
+                        <span style="color:#ACDBF5;">\20,460</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/g4.PNG" alt="Tropico6">
+                <figcaption>
+                    <div class="title game_info">Tropico6</div>
+                    <div class="discount game_info" style="background-color:#5C7E10; color:#A4D007;">-60%</div>
+                    <div class="price game_info" style="background-color:#162F40;">
+                        <span style="color:#487180;"><del>\54,000</del></span><br>
+                        <span style="color:#ACDBF5;">\21,600</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/g5.PNG" alt="Beyond">
+                <figcaption>
+                    <div class="title game_info">Beyond</div>
+                    <div class="discount game_info" style="background-color:#5C7E10; color:#A4D007;">-50%</div>
+                    <div class="price game_info" style="background-color:#162F40;">
+                        <span style="color:#487180;"><del>\19,900</del></span><br>
+                        <span style="color:#ACDBF5;">\9,950</span>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/g6.PNG" alt="Dying Light">
+                <figcaption>
+                    <div class="title game_info">Dying Light</div>
+                    <div class="discount game_info" style="background-color:#5C7E10; color:#A4D007;">-66%</div>
+                    <div class="price game_info" style="background-color:#162F40;">
+                        <span style="color:#487180;"><del>\43,000</del></span><br>
+                        <span style="color:#ACDBF5;">\14,620</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <div id="info">
+            <p>Internet Programming</p>
+            <p>Computer Science 20170580 HyeJun Lee</p>
+            <p>Original Site: <a href="https://store.steampowered.com/" target="_blank">Steam</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" tyle="image/png" href="./img/steam_logo.png">
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <style>
+        body {
+            background-color: #2B2E35;
+            overflow: hidden;
+        }
+
+        #back {
+            display: grid;
+            grid-template-columns: 370px 1fr 1fr;
+        }
+
+        #grid1 {
+            height: 100%;
+        }
+
+        #grid2 {
+            background: linear-gradient(to right, #202529, #2C3037);
+            text-align: center;
+        }
+
+        #grid2 h1 {
+            font-size: 45px;
+            color: white;
+            margin: 50px;
+            font-weight:lighter
+        }
+
+        #grid2 p {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #B8B6B4;
+        }
+
+        #grid2 input {
+            width: 350px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        #grid2 input[type=text] {
+            background-color: #32353C;
+            color: white;
+        }
+
+        #login_form {
+            width: 350px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #login_btn {
+            margin: 30px auto;
+            font-size: 18px;
+            background: linear-gradient(to right, #08BBFF, #2B76FF);
+            width: 250px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 3px;
+            color: #C3E1F8;
+            text-shadow: 2px 2px 2px #235E9E;
+            box-shadow: 0px 1px 5px rgb(0, 0, 0);
+        }
+
+        #login_btn:hover {
+            filter: brightness(130%);
+        }
+
+        #grid3 {
+            padding-top: 70px;
+            background-color: #212429;
+            color: #B8B6B4;
+            text-align: center;
+        }
+
+        a, a:visited {
+            color: white;
+        }
+
+        .link:hover {
+            color: #66C0F4;
+        }
+
+        #join {
+            border: 1px solid #B8B6B4;
+            padding: 6px 20px;
+            border-radius: 2px;
+        }
+
+        #join:hover {
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="hw07.html"><img src="./img/header_logo.png" alt="스팀 로고" id="steam_logo" width="200px"></a>
+        </div>
+        <div id="nav">
+            <a href="./hw07.html">상점</a>&nbsp;&nbsp;
+            <a href="./community.html">커뮤니티</a>&nbsp;&nbsp;
+            <a href="./information.html">정보</a>&nbsp;&nbsp;
+            <a href="./help.html">지원</a>
+        </div>
+        <div id="setting">
+            <ul>
+                <li><a href=""><img src="./img/install.PNG" alt="스팀 설치" width="100px;"
+                            style="vertical-align: middle;"></a>&nbsp;&nbsp;</li>
+                <li><a href="./login.html">로그인&nbsp;&nbsp;|</a></li>
+                <select name="language">
+                    <option value="1">한국어</option>
+                    <option value="2">영어</option>
+                    <option value="3">일본어</option>
+                    <option value="4">중국어</option>
+                </select>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="back">
+            <div id="grid1">
+                <img src="./img/left.PNG" alt="배경" width="400px">
+            </div>
+            <div id="grid2">
+                <h1>로그인</h1>
+                <div id="login_form">
+                    <p>Steam 계정 이름</p>
+                    <input type="text">
+                    <p>비밀번호</p>
+                    <input type="password">
+                </div>
+                <div id="login_btn">로그인</div>
+                <a href="" class="link">비밀번호를 잊으셨나요?</a>
+            </div>
+            <div id="grid3">
+                <p>스팀에 가입하여 수천 종류의 게임을<br>발견하고 즐겨보세요.</p>
+                <a href="./information.html" class="link">더 알아보기</a><br><br>
+                <img src="./img/illust.PNG" alt="이미지" width="400px;"><br>
+                <p>가입은 무료이며 쉽고 편하게 이용할 수 있습니다.</p><br>
+                <a href="" id="join">Steam 가입하기</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
